@@ -112,7 +112,7 @@ bool sortRule(Species a, Species b)
 int main(){srand(time(NULL));
 
     Mat target, proc;
-    target = imread("1.jpg", 0);
+    target = imread("1.jpeg", 0);
     namedWindow("Display Image", WINDOW_AUTOSIZE);
 
     proc = target;
