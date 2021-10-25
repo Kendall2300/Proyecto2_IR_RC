@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.5)
 
 project(Geneticalgo VERSION 0.1 LANGUAGES CXX)
 
+find_package(Qt5Widgets REQUIRED)
+target_link_libraries(helloworld Qt5::Widgets)
+set(CMAKE_PREFIX_PATH "C:\\Qt\\Qt5.14.0\\5.14.0\\mingw73_32\\")
+
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
