@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dlurena24/Documents/TEC&apos;S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/Species.cpp">
-			<Option target="TestGenetico"/>
-		</Unit>
-		<Unit filename="/home/dlurena24/Documents/TEC&apos;S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/Species.h">
-			<Option target="TestGenetico"/>
-		</Unit>
 		<Unit filename="/home/dlurena24/Documents/TEC&apos;S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/TestGenetico.cpp">
 			<Option target="TestGenetico"/>
 		</Unit>

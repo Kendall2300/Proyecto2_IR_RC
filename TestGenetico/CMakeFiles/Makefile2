@@ -81,12 +81,12 @@ clean: CMakeFiles/TestGenetico.dir/clean
 CMakeFiles/TestGenetico.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico.dir/build.make CMakeFiles/TestGenetico.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico.dir/build.make CMakeFiles/TestGenetico.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles" --progress-num=1,2,3 "Built target TestGenetico"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles" --progress-num=1,2 "Built target TestGenetico"
 .PHONY : CMakeFiles/TestGenetico.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TestGenetico.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TestGenetico.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles" 0
 .PHONY : CMakeFiles/TestGenetico.dir/rule

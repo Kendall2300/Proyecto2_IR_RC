@@ -9,7 +9,6 @@
 #include <opencv2/opencv.hpp>
 //#include algorithm
 //#include
-#include "Species.h"
 
 using namespace cv;
 
@@ -80,11 +79,40 @@ public:
     }
 };
 
+void breed(int place, Species a, Species b)
+{
+    for (int i = 0; i < frows; i++)
+    {
+        for (int j = 0; j < fcols; j++)
+        {
+            if ((data[a.index][i][j] == best[i][j]) || (data[b.index][i][j] == best[i][j]))
+            {
+                if (rand() % 10 == 0)
+                    ndata[place][i][j] = best[i][j];
+                else
+                    goto branch;
+            }
+            else
+            {
+                branch:
+                if (rand() % 2 == 0)
+                    ndata[place][i][j] = data[a.index][i][j];
+                else
+                    ndata[place][i][j] = data[b.index][i][j];
+            }
+        }
+    }
+}
+
+bool sortRule(Species a, Species b)
+{
+    return a.fit > b.fit;
+}
 
 int main(){srand(time(NULL));
 
     Mat target, proc;
-    target = imread("google.jpg", 0);
+    target = imread("1.jpg", 0);
     namedWindow("Display Image", WINDOW_AUTOSIZE);
 
     proc = target;
@@ -167,39 +195,4 @@ int main(){srand(time(NULL));
     delete data;
     delete ndata;
     return 0;
-}
-
-uchar **best;
-uchar ***data, ***ndata;
-
-
-
-bool sortRule(Species a, Species b)
-{
-    return a.fit > b.fit;
-}
-
-void breed(int place, Species a, Species b)
-{
-    for (int i = 0; i < frows; i++)
-    {
-        for (int j = 0; j < fcols; j++)
-        {
-            if ((data[a.index][i][j] == best[i][j]) || (data[b.index][i][j] == best[i][j]))
-            {
-                if (rand() % 10 == 0)
-                    ndata[place][i][j] = best[i][j];
-                else
-                    goto branch;
-            }
-            else
-            {
-                branch:
-                if (rand() % 2 == 0)
-                    ndata[place][i][j] = data[a.index][i][j];
-                else
-                    ndata[place][i][j] = data[b.index][i][j];
-            }
-        }
-    }
 }
