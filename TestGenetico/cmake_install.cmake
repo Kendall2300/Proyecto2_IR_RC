@@ -1,4 +1,4 @@
-# Install script for directory: /home/dlurena24/CLionProjects/TestGenetico
+# Install script for directory: /home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dlurena24/CLionProjects/TestGenetico/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

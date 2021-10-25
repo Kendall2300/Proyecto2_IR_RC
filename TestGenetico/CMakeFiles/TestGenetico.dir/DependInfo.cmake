@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dlurena24/CLionProjects/TestGenetico/Species.cpp" "/home/dlurena24/CLionProjects/TestGenetico/CMakeFiles/TestGenetico.dir/Species.cpp.o"
-  "/home/dlurena24/CLionProjects/TestGenetico/TestGenetico.cpp" "/home/dlurena24/CLionProjects/TestGenetico/CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
+  "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/Species.cpp" "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles/TestGenetico.dir/Species.cpp.o"
+  "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/TestGenetico.cpp" "/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
