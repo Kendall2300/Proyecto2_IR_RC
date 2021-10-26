@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/Grafo.cpp
+Grafo.h
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/Grafo.h
+
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/Grafo.h
+
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/main.cpp
+iostream
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/iostream
+stdlib.h
+/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/stdlib.h
+
