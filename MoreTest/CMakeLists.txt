@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( TestGenetico )
+find_package( OpenCV REQUIRED )
+add_executable( TestGenetico TestGenetico.cpp TestGenetico.cpp TestGenetico.h)
+target_link_libraries( TestGenetico ${OpenCV_LIBS} )
