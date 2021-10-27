@@ -145,7 +145,8 @@ void Grafo::ListaAdyacencia()
         ArisAux = VertAux->ady;
         while(ArisAux != NULL)
         {
-            cout<<ArisAux->ady->nombre<<"->";
+            cout<<ArisAux->ady->nombre<<":";
+            cout<<ArisAux->peso<<"->";
             ArisAux = ArisAux->sig;
         }
         VertAux = VertAux->sig;
