@@ -24,8 +24,8 @@ int Grafo::Tamano()
     aux = h;
     while(aux != NULL)
     {
-        cont++
-        aux = aux->sig
+        cont++;
+        aux = aux->sig;
     }
     return cont;
 }
@@ -95,7 +95,7 @@ void Grafo::InsertaArista(Vertice *origen, Vertice *destino, int peso)
     }
 }
 
-void Grafo::ListaAdyacencia();
+void Grafo::ListaAdyacencia()
 {
     Vertice *VertAux;
     Arista *ArisAux;
@@ -146,7 +146,7 @@ void Grafo::EliminarArista(Vertice *origen, Vertice *destino)
     {
         while(actual != NULL)
         {
-            if(actual-> == destino)
+            if(actual->ady == destino)
             {
                 band = 1;
                 anterior->sig = actual->sig;
@@ -158,7 +158,7 @@ void Grafo::EliminarArista(Vertice *origen, Vertice *destino)
         }
         if(band == 0)
         {
-            cout<<"Esos dos vertices no estan coenctados"<<endl;
+            cout<<"Esos dos vertices no estan conectados"<<endl;
         }
     }
 }
@@ -194,7 +194,7 @@ void Grafo::EliminarVertice(Vertice *vert)
         while(actual != vert)
         {
             anterior = actual;
-            actual = actual->sig
+            actual = actual->sig;
         }
         anterior->sig = actual->sig;
         delete(actual);
@@ -249,5 +249,65 @@ void Grafo::RecorridoProfundidad(Vertice *origen)
                 aux = aux->sig;
             }
         }
+    }
+}
+
+void Grafo::PrimeroProfundidad(Vertice *origen, Vertice *destino) {
+    Vertice *VerticeActual, *DestinoActual;
+    typedef pair<Vertice*, Vertice*> ParVertices;
+    int band,band2,band3=0;
+    Arista *aux;
+    stack<Vertice*> pila;
+    list<Vertice*> lista;
+    stack <ParVertices> PilaPar;
+    list<Vertice*>::iterator i;
+
+    pila.push(origen);
+
+    while (!pila.empty()){
+        band=0;
+        VerticeActual=pila.top();
+        pila.pop();
+
+        for(i=lista.begin();i!=lista.end();i++){
+            if(VerticeActual==*i){
+                band=1;
+            }
+        }
+        if (band==0){
+            if (VerticeActual==destino){
+                band3=1;
+                DestinoActual=destino;
+                while(!PilaPar.empty()){
+                    cout<<DestinoActual->nombre<<"<-";
+                    while (!PilaPar.empty()&& PilaPar.top().second != DestinoActual){
+                        PilaPar.pop();
+
+                    }
+                    if(!PilaPar.empty()){
+                        DestinoActual=PilaPar.top().first;
+                    }
+                }
+                break;
+            }
+            lista.push_back(VerticeActual);
+            aux=VerticeActual->ady;
+            while(aux!=NULL){
+                band2=0;
+                for(i=lista.begin(); i!=lista.end(); i++){
+                    if(aux->ady==*i){
+                        band2=1;
+                    }
+                }
+                if(band2==0){
+                    pila.push(aux->ady);
+                    PilaPar.push(ParVertices(VerticeActual,aux->ady));
+                }
+                aux=aux->sig;
+            }
+        }
+    }
+    if(band3==0){
+        cout <<"Nop hay ruta entre los vertices"<< endl;
     }
 }
