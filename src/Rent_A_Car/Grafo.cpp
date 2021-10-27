@@ -1,10 +1,27 @@
+/**
+ * @file Grafo.cpp
+ * @authors Kendall Martinez Carvajal (kendallmc@estudiantec.cr) && Jose Umana Rivera
+ * @brief Este codigo contiene la declaracion de los metodos, funciones y los algoritmos necesarios para construir,
+ * modificar y analizar el grafo
+ *
+ * @version 1.0
+ *
+ * @copyright Copyright (c) 2021
+ */
 #include "Grafo.h"
 
+/**
+ * @brief Este metodo se encarga de inicializar el grafo
+ */
 void Grafo::Inicializa()
 {
     h = NULL;
 }
 
+/**
+ * @brief Este metodo se encarga de revisar si el grafo se encuentra vacio
+ * @return A boolean
+ */
 bool Grafo::Vacio()
 {
     if(h == NULL)
@@ -17,6 +34,10 @@ bool Grafo::Vacio()
     }
 }
 
+/**
+ * @brief Este metodo te devuelve la cantidad de Vertices que posee el grafo
+ * @return An int que es el numero de vertices
+ */
 int Grafo::Tamano()
 {
     int cont = 0;
@@ -29,7 +50,11 @@ int Grafo::Tamano()
     }
     return cont;
 }
-
+/**
+ * @brief Este metodo te recupera el nombre de un vertice
+ * @param nombre A string que contiene el nombre de un vertice del grafo
+ * @return A Null
+ */
 Vertice *Grafo::GetVertice(string nombre)
 {
     Vertice *aux;
@@ -45,6 +70,10 @@ Vertice *Grafo::GetVertice(string nombre)
     return NULL;
 }
 
+/**
+ * @brief ESte metodo se encarga de insertar los vertices en el grafo
+ * @param nombre A string que corresponde al nombre del vertice
+ */
 void Grafo::InsertaVertice(string nombre)
 {
     Vertice *nuevo = new Vertice;
@@ -68,6 +97,12 @@ void Grafo::InsertaVertice(string nombre)
     }
 }
 
+/**
+ * @brief Este metodo se encarga de insertar las aristas entre los vertices
+ * @param origen A Vertice una referencia al vertice del origen
+ * @param destino A Vertice una referencia al vertice del destino
+ * @param peso A int que corresponde al valor de la arista
+ */
 void Grafo::InsertaArista(Vertice *origen, Vertice *destino, int peso)
 {
     Arista *nueva = new Arista;
@@ -95,6 +130,9 @@ void Grafo::InsertaArista(Vertice *origen, Vertice *destino, int peso)
     }
 }
 
+/**
+ * @brief Este metodo te imprime la lista de adyacencia correspodiente al grafo
+ */
 void Grafo::ListaAdyacencia()
 {
     Vertice *VertAux;
@@ -115,6 +153,9 @@ void Grafo::ListaAdyacencia()
     }
 }
 
+/**
+ * @brief Este metodo se encarga de destruir el grafo
+ */
 void Grafo::Anular()
 {
     Vertice *aux;
@@ -127,6 +168,11 @@ void Grafo::Anular()
     }
 }
 
+/**
+ * @brief Este metodo se encarga de eliminar las aristas
+ * @param origen Vertice que se corresponde al origen
+ * @param destino Vertice que corresponde al destino
+ */
 void Grafo::EliminarArista(Vertice *origen, Vertice *destino)
 {
     int band = 0;
@@ -163,6 +209,10 @@ void Grafo::EliminarArista(Vertice *origen, Vertice *destino)
     }
 }
 
+/**
+ * @brief ESte metodo se encarga de eliminar un vertice especificado
+ * @param vert Un Vertice que corresponde al que se desea eliminar
+ */
 void Grafo::EliminarVertice(Vertice *vert)
 {
     Vertice *actual, *anterior;
@@ -201,6 +251,10 @@ void Grafo::EliminarVertice(Vertice *vert)
     }
 }
 
+/**
+ * @brief ESte metodo encuentra todos los vertices que tengan conexion entre si
+ * @param origen Un Vertice que corresponde al vertice del que partes a invertigar
+ */
 void Grafo::RecorridoProfundidad(Vertice *origen)
 {
     int band, band2;
@@ -252,6 +306,11 @@ void Grafo::RecorridoProfundidad(Vertice *origen)
     }
 }
 
+/**
+ * @brief Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo
+ * @param origen Un vertice que sera el punto de partida
+ * @param destino Un vertice que corresponde al de llegada
+ */
 void Grafo::PrimeroProfundidad(Vertice *origen, Vertice *destino) {
     Vertice *VerticeActual, *DestinoActual;
     typedef pair<Vertice*, Vertice*> ParVertices;

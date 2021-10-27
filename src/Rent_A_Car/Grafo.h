@@ -1,10 +1,9 @@
 /**
  * @file Grafo.h
  * @authors Kendall Martinez Carvajal (kendallmc@estudiantec.cr) && Jose Umana Rivera
- * @brief
- * ESte codigo contiene la definicion de las clases con sus atributos y metodos para manejar el Grafo
+ * @brief ESte codigo contiene la definicion de las clases con sus atributos y metodos para manejar el Grafo
  *
- * @version 1.0
+ * @version 1.01
  *
  * @copyright Copyright (c) 2021
  */
