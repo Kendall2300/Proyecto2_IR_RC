@@ -49,23 +49,23 @@ int main (){
 
     //int random = rand()%3;
     //cout<<random<<endl;
-
-   // GR.InsertaVertice("A");
-   // GR.InsertaVertice("B");
-   // GR.InsertaVertice("C");
-   // GR.InsertaVertice("D");
-   // GR.InsertaVertice("E");
-    //GR.InsertaArista(GR.GetVertice("A"),GR.GetVertice("E"),3);
-    //GR.InsertaArista(GR.GetVertice("A"),GR.GetVertice("D"),1);
-    //GR.InsertaArista(GR.GetVertice("B"),GR.GetVertice("A"),1);
-    //GR.InsertaArista(GR.GetVertice("B"),GR.GetVertice("D"),2);
-    //GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("A"),1);
-    //GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("E"),1);
-    //GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("C"),2);
-    //GR.InsertaArista(GR.GetVertice("E"),GR.GetVertice("D"),1);
+    /*Grafo GR=Grafo();
+    GR.InsertaVertice("A");
+    GR.InsertaVertice("B");
+    GR.InsertaVertice("C");
+    GR.InsertaVertice("D");
+    GR.InsertaVertice("E");
+    GR.InsertaArista(GR.GetVertice("A"),GR.GetVertice("E"),3);
+    GR.InsertaArista(GR.GetVertice("A"),GR.GetVertice("D"),1);
+    GR.InsertaArista(GR.GetVertice("B"),GR.GetVertice("A"),2);
+    GR.InsertaArista(GR.GetVertice("B"),GR.GetVertice("D"),2);
+    GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("A"),3);
+    GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("E"),1);
+    GR.InsertaArista(GR.GetVertice("D"),GR.GetVertice("C"),2);
+    GR.InsertaArista(GR.GetVertice("E"),GR.GetVertice("D"),1);*/
     //GR.RecorridoProfundidad(GR.GetVertice("B"));
-    //GR.PrimeroProfundidad(GR.GetVertice("B"),GR.GetVertice("A"));
     GR.ListaAdyacencia();
+    GR.PrimeroProfundidad(GR.GetVertice("B"),GR.GetVertice("A"));
     //cout<<GR.Tamano();
     //GR.EliminarVertice(GR.GetVertice("B"));
 

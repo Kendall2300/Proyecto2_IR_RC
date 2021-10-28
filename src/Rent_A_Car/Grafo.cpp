@@ -315,7 +315,7 @@ void Grafo::RecorridoProfundidad(Vertice *origen)
 void Grafo::PrimeroProfundidad(Vertice *origen, Vertice *destino) {
     Vertice *VerticeActual, *DestinoActual;
     typedef pair<Vertice*, Vertice*> ParVertices;
-    int band,band2,band3=0;
+    int band,band2,band3=0, tanque=origen->ady->peso;
     Arista *aux;
     stack<Vertice*> pila;
     list<Vertice*> lista;
@@ -348,10 +348,18 @@ void Grafo::PrimeroProfundidad(Vertice *origen, Vertice *destino) {
                         DestinoActual=PilaPar.top().first;
                     }
                 }
+                cout<<"   El tamanio de tu tanque debe ser: "<<tanque<<endl;
                 break;
             }
             lista.push_back(VerticeActual);
             aux=VerticeActual->ady;
+            if(aux!=NULL){
+                if (aux->peso!=NULL){
+                    if (tanque <= aux->peso){
+                        tanque=aux->peso;
+                    }
+                }
+            }
             while(aux!=NULL){
                 band2=0;
                 for(i=lista.begin(); i!=lista.end(); i++){
@@ -368,6 +376,6 @@ void Grafo::PrimeroProfundidad(Vertice *origen, Vertice *destino) {
         }
     }
     if(band3==0){
-        cout <<"Nop hay ruta entre los vertices"<< endl;
+        cout <<"No hay ruta entre los vertices"<< endl;
     }
 }
