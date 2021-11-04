@@ -397,7 +397,7 @@ bool Comparacion(pair <Vertice*, int> a, pair<Vertice*, int> b)
  */
 void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
 {
-    int CostoActual=0, band, band2;
+    int CostoActual, band, band2, CostoAnterior;
     Vertice *VerticeActual, *DestinoActual;
     Arista *aux;
     typedef pair<Vertice*, int> VerticeCosto;
@@ -443,8 +443,12 @@ void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
         while(aux != NULL)
         {
             band = 0;
-            CostoActual = CostoActual + aux->peso;
-
+            CostoAnterior = CostoActual;
+            if (CostoActual < aux->peso)
+            {
+                CostoActual = aux->peso;
+            }
+            //CostoActual = CostoActual + aux->peso;
             for(i=ListaCostos.begin(); i!=ListaCostos.end(); i++)
             {
                 if(aux->ady == i->first)
@@ -463,7 +467,8 @@ void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
                         }
                         ListaOrdenada.sort(Comparacion);
                         pila.push(VerticeVertice(VerticeActual, aux->ady));
-                        CostoActual = CostoActual - aux->peso;
+                        CostoActual = CostoAnterior;
+                        //CostoActual = CostoActual - aux->peso;
                     }
                 }
             }
@@ -473,7 +478,8 @@ void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
                 ListaOrdenada.push_back(VerticeCosto(aux->ady, CostoActual));
                 ListaOrdenada.sort(Comparacion);
                 pila.push(VerticeVertice(VerticeActual, aux->ady));
-                CostoActual = CostoActual - aux->peso;
+                CostoActual = CostoAnterior;
+                //CostoActual = CostoActual - aux->peso;
             }
 
             aux = aux->sig;
