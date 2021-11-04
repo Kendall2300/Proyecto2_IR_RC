@@ -47,6 +47,7 @@ public:
     void EliminarVertice(Vertice *vert);
     void RecorridoProfundidad(Vertice *origen);
     void PrimeroProfundidad(Vertice *origen, Vertice *destino);
+    void PrimeroMejor(Vertice *origen, Vertice *destino);
 };
 
 #endif //RENT_A_CAR_GRAFO_H
