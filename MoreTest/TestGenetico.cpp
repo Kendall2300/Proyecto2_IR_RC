@@ -1,9 +1,6 @@
 #include "TestGenetico.h"
 
-//#include opencv2/opencv.hpp
-//#include time.h
 #include <opencv2/opencv.hpp>
-//#include algorithm
 
 using namespace cv;
 using namespace std;
@@ -17,6 +14,9 @@ bool found = false;
 uchar **best;
 uchar ***data, ***ndata;
 int *mpool;
+bool sWhite = true;
+bool eWhite = true;
+int srow, scol, erow, ecol;
 
 struct Species
 {
@@ -24,6 +24,7 @@ public:
     int fit;
     int _rw, _cl;
     int index;
+    int ref = 20;
 
     void setFit()
     {
@@ -32,7 +33,7 @@ public:
         {
             for (int j = 0; j < _cl; j++)
             {
-                if (data[index][i][j] == best[i][j])
+                if (data[index][i][j] == best[ref][j])
                     cnt++;
             }
         }
@@ -40,18 +41,21 @@ public:
         fit = (fit * fit) / 1000;
     }
 
-//    Se modifica
     void allocate(int rw, int cl)
     {
         _rw = rw;
         _cl = cl;
         index = c_index;
         for (int i = 0; i < _rw; i++)
-//            for (int j = 0; j < _cl; j++)
-//                data[c_index][i][j] = rand() % 256;
-            if(i > 50 && i < 75){
-                for (int j = 0; j < _cl; j++)
-                    data[c_index][i][j] = rand() % 256;
+            if(i > srow && i < erow){
+                for (int j = 0; j < _cl; j++) {
+                    if (j > scol && j < ecol) {
+                        data[c_index][i][j] = rand() % 256;
+                    }
+                    else {
+                        data[c_index][i][j] = best[i][j];
+                    }
+                }
             }
             else{
                 for (int j = 0; j < _cl; j++) {
@@ -77,32 +81,30 @@ public:
     {
         for (int i = 0; i < _rw; i++)
         {
-            if (i > 50 && i < 75){
+            if (i > srow && i < erow){
                 for (int j = 0; j < _cl; j++)
                 {
-                    if (rand() % 100 < mrate)
-                        ndata[index][i][j] = rand() % 256;
+                    if(j > scol && j < ecol){
+                        if (rand() % 100 < mrate)
+                            ndata[index][i][j] = rand() % 256;
+                    }
                 }
             }
-//            for (int j = 0; j < _cl; j++)
-//            {
-//                if (rand() % 100 < mrate)
-//                    ndata[index][i][j] = rand() % 256;
-//            }
         }
     }
 };
 
 void breed(int place, Species a, Species b)
 {
+    int ref = 20;
     for (int i = 0; i < frows; i++)
     {
         for (int j = 0; j < fcols; j++)
         {
-            if ((data[a.index][i][j] == best[i][j]) || (data[b.index][i][j] == best[i][j]))
+            if ((data[a.index][i][j] == best[ref][j]) || (data[b.index][i][j] == best[ref][j]))
             {
                 if (rand() % 10 == 0)
-                    ndata[place][i][j] = best[i][j];
+                    ndata[place][i][j] = best[ref][j];
                 else
                     goto branch;
             }
@@ -177,10 +179,45 @@ int main(){srand(time(NULL));
 //        cout << "Green" << endl;
 //    }
 //
-//    cout << x1 << "  " << x2 << "  " << x3;
+//    cout << x1 << "  " << x2 << "  " << x3 << endl;
+//
+//    frows = OutImg4.rows;
+//    fcols = OutImg4.cols;
+//    int srow, scol, erow, ecol;
+//
+//
+//    for (int i = 0; i < frows; i++)
+//    {
+//        for (int j = 0; j < fcols; j++)
+//        {
+//            if(sWhite){
+//                if(OutImg4.at<uchar>(i,j) == 255){
+//                    srow = i;
+//                    scol = j;
+//                    cout << srow << " & " << scol << endl;
+//                    sWhite = false;
+//                }
+//            }
+//        }
+//    }
+//
+//    for (int i = frows-1; i > 0; i--)
+//    {
+//        for (int j = fcols-1; j > 0; j--)
+//        {
+//            if(eWhite){
+//                if(OutImg4.at<uchar>(i,j) == 255){
+//                    erow = i;
+//                    ecol = j;
+//                    cout << erow << " & " << ecol << endl;
+//                    eWhite = false;
+//                }
+//            }
+//        }
+//    }
 //
 //    namedWindow("Output Image", WINDOW_AUTOSIZE);
-//    imshow("Output Image", OutImg3); //Cambia segun el color
+//    imshow("Output Image", OutImg4); //Cambia segun el color
 //    waitKey(0);
 
 //    --------------------------------------------------------------------- EndTest
@@ -192,6 +229,45 @@ int main(){srand(time(NULL));
     Species *ppl;
 
     cout << fcols << "  x  " << frows << "  pixeles" << endl;
+
+    //  Get white
+    Mat OutImg4;
+    inRange(target, Scalar(240, 240, 240), Scalar(255, 255, 255) , OutImg4);
+
+    int wrows = OutImg4.rows;
+    int wcols = OutImg4.cols;
+
+
+    for (int i = 0; i < wrows; i++)
+    {
+        for (int j = 0; j < wcols; j++)
+        {
+            if(sWhite){
+                if(OutImg4.at<uchar>(i,j) == 255){
+                    srow = i;
+                    scol = j;
+                    cout << srow << " & " << scol << endl;
+                    sWhite = false;
+                }
+            }
+        }
+    }
+
+    for (int i = wrows-1; i > 0; i--)
+    {
+        for (int j = wcols-1; j > 0; j--)
+        {
+            if(eWhite){
+                if(OutImg4.at<uchar>(i,j) == 255){
+                    erow = i;
+                    ecol = j;
+                    cout << erow << " & " << ecol << endl;
+                    eWhite = false;
+                }
+            }
+        }
+    }
+//    End get white
 
     best = new uchar *[frows];
     for (int i = 0; i < frows; i++)
@@ -205,16 +281,9 @@ int main(){srand(time(NULL));
         {
             best[i][j] = (uchar)lin[j];
         }
-//        if (i > 50 && i < 75){
-//            uchar *lin = target.ptr(i);
-//            for (int j = 0; j < fcols; j++)
-//            {
-//                best[i][j] = (uchar) lin[j];
-//            }
-//        }
     }
 //    std::cin >> ppn;
-    ppn = 75;
+    ppn = 80;
     mpool = new int[ppn * (ppn + 1) / 2];
 
     data = new uchar **[ppn + 10];
