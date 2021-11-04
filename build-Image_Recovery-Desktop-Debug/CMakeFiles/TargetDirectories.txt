@@ -1,4 +1,0 @@
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/build-Image_Recovery-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/build-Image_Recovery-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/build-Image_Recovery-Desktop-Debug/CMakeFiles/Geneticalgo.dir
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/build-Image_Recovery-Desktop-Debug/CMakeFiles/Geneticalgo_autogen.dir

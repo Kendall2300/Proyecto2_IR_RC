@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-b370ed9a2b957c0ea98cc0d6352a3fb6 /home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/Image_Recovery/Image_Recovery_en_US.ts
-6ce6d5fc9ee91406fa5b410f4678cb02 CMakeFiles/Geneticalgo_autogen

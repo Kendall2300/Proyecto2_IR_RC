@@ -1,3 +1,0 @@
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles/rebuild_cache.dir
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles/edit_cache.dir
-/home/dlurena24/Documents/TEC'S DOCS/ALGORITMOS Y ESTRUCTURAS DE DATOS II /Proecto 2/Proyecto2_IR_RC/TestGenetico/CMakeFiles/TestGenetico.dir
