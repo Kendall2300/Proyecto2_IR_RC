@@ -14,6 +14,7 @@
 #include "queue"
 #include "list"
 #include "stack"
+#include <QString>
 using namespace std;
 
 class Arista;
@@ -41,12 +42,13 @@ public:
     Vertice *GetVertice (string nombre);
     void InsertaArista(Vertice *origen, Vertice *destino, int peso);
     void InsertaVertice(string nombre);
-    void ListaAdyacencia();
+    string ListaAdyacencia();
     void EliminarArista(Vertice *origen, Vertice *destino);
     void Anular();
     void EliminarVertice(Vertice *vert);
     void RecorridoProfundidad(Vertice *origen);
     void PrimeroProfundidad(Vertice *origen, Vertice *destino);
     void PrimeroMejor(Vertice *origen, Vertice *destino);
+    string lavel;
 };
 #endif // GRAFO_H

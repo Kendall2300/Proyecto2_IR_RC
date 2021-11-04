@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>492</width>
-    <height>231</height>
+    <width>760</width>
+    <height>458</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>30</y>
+      <y>0</y>
       <width>449</width>
       <height>131</height>
      </rect>
@@ -50,13 +50,41 @@
      </item>
     </layout>
    </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>451</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>LIsta de adyacencia</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_adyacencia">
+       <property name="minimumSize">
+        <size>
+         <width>427</width>
+         <height>127</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>492</width>
+     <width>760</width>
      <height>22</height>
     </rect>
    </property>

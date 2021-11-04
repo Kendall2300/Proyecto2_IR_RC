@@ -1002,7 +1002,29 @@ graph_view.o: ../Rent_Car/graph_view.cpp ../Rent_Car/graph_view.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/QTransform \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qnativeinterface.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qloggingcategory.h \
-		ui_graph_view.h
+		ui_graph_view.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/QVariant \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/QApplication \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/qapplication.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qfuture.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qmutex.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qresultstore.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qthreadpool.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qthread.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qrunnable.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qexception.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qapplicationpermission.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qlocale.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graph_view.o ../Rent_Car/graph_view.cpp
 
 main.o: ../Rent_Car/main.cpp ../Rent_Car/rent_car.h \

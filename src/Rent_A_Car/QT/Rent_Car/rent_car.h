@@ -19,7 +19,6 @@ public:
 private slots:
     void on_pushButton_aceptar_Cciudades_clicked();
 
-
 private:
     Ui::Rent_Car *ui;
     graph_view *Lista_Adyacencia;

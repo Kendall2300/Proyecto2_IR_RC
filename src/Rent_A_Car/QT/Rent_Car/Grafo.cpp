@@ -9,6 +9,8 @@
  * @copyright Copyright (c) 2021
  */
 #include "Grafo.h"
+#include "stdlib.h"
+
 int tanqueF = 50;
 
 /**
@@ -134,7 +136,7 @@ void Grafo::InsertaArista(Vertice *origen, Vertice *destino, int peso)
 /**
  * @brief Este metodo te imprime la lista de adyacencia correspodiente al grafo
  */
-void Grafo::ListaAdyacencia()
+string Grafo::ListaAdyacencia()
 {
     Vertice *VertAux;
     Arista *ArisAux;
@@ -142,17 +144,23 @@ void Grafo::ListaAdyacencia()
     VertAux = h;
     while(VertAux != NULL)
     {
-        cout<<VertAux->nombre<<"->";
+        lavel+=VertAux->nombre+"->";
+        //cout<<VertAux->nombre<<"->";
         ArisAux = VertAux->ady;
         while(ArisAux != NULL)
         {
-            cout<<ArisAux->ady->nombre<<":";
-            cout<<ArisAux->peso<<"->";
+            lavel+= ArisAux->ady->nombre+":";
+            //cout<<ArisAux->ady->nombre<<":";
+            string STR_Peso(std::to_string(ArisAux->peso));
+            lavel+=STR_Peso+"->";
+            //cout<<ArisAux->peso<<"->";
             ArisAux = ArisAux->sig;
         }
         VertAux = VertAux->sig;
-        cout<<endl;
+        lavel+="\n";
+        //cout<<endl;
     }
+    return lavel;
 }
 
 /**

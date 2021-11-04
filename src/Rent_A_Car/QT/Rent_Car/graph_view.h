@@ -15,6 +15,9 @@ public:
     explicit graph_view(QWidget *parent = nullptr);
     ~graph_view();
 
+private slots:
+    void on_label_listad_adyacencia_linkActivated(const QString &link);
+
 private:
     Ui::graph_view *ui;
 };

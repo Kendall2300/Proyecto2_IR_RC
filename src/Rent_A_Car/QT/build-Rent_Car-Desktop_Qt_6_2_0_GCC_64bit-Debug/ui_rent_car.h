@@ -34,6 +34,9 @@ public:
     QLabel *label_ingCiudades;
     QLineEdit *lineEdit_ciudades;
     QPushButton *pushButton_aceptar_Cciudades;
+    QGroupBox *groupBox_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_adyacencia;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -41,12 +44,12 @@ public:
     {
         if (Rent_Car->objectName().isEmpty())
             Rent_Car->setObjectName(QString::fromUtf8("Rent_Car"));
-        Rent_Car->resize(492, 231);
+        Rent_Car->resize(760, 458);
         centralwidget = new QWidget(Rent_Car);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(20, 30, 449, 131));
+        groupBox->setGeometry(QRect(20, 0, 449, 131));
         verticalLayout = new QVBoxLayout(groupBox);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
@@ -69,10 +72,21 @@ public:
 
         verticalLayout->addWidget(pushButton_aceptar_Cciudades);
 
+        groupBox_2 = new QGroupBox(centralwidget);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(20, 140, 451, 271));
+        verticalLayout_2 = new QVBoxLayout(groupBox_2);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_adyacencia = new QLabel(groupBox_2);
+        label_adyacencia->setObjectName(QString::fromUtf8("label_adyacencia"));
+        label_adyacencia->setMinimumSize(QSize(427, 127));
+
+        verticalLayout_2->addWidget(label_adyacencia);
+
         Rent_Car->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Rent_Car);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 492, 22));
+        menubar->setGeometry(QRect(0, 0, 760, 22));
         Rent_Car->setMenuBar(menubar);
         statusbar = new QStatusBar(Rent_Car);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -89,6 +103,8 @@ public:
         groupBox->setTitle(QCoreApplication::translate("Rent_Car", "Inicio de ciudades", nullptr));
         label_ingCiudades->setText(QCoreApplication::translate("Rent_Car", "Ingrese la cantidad de ciudades (Max 15)", nullptr));
         pushButton_aceptar_Cciudades->setText(QCoreApplication::translate("Rent_Car", "Aceptar", nullptr));
+        groupBox_2->setTitle(QCoreApplication::translate("Rent_Car", "LIsta de adyacencia", nullptr));
+        label_adyacencia->setText(QString());
     } // retranslateUi
 
 };
