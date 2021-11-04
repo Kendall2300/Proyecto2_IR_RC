@@ -309,7 +309,7 @@ void Grafo::RecorridoProfundidad(Vertice *origen)
 }
 
 /**
- * @brief Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo
+ * @brief Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo de forma voraz
  * @param origen Un vertice que sera el punto de partida
  * @param destino Un vertice que corresponde al de llegada
  */
@@ -390,6 +390,11 @@ bool Comparacion(pair <Vertice*, int> a, pair<Vertice*, int> b)
     return a.second < b.second;
 }
 
+/**
+ * @brief Este metodo se encarga de recorrer el grafo y de paso calcular la ruta que sera de menor costo usando bactraking
+ * @param origen Un vertice que sera el punto de partida
+ * @param destino Un vertice que sera el punto de llegada
+ */
 void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
 {
     int CostoActual=0, band, band2;
