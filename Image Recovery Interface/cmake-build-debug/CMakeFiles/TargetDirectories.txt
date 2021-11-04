@@ -1,0 +1,4 @@
+/home/gabriel/CLionProjects/prove/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gabriel/CLionProjects/prove/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gabriel/CLionProjects/prove/cmake-build-debug/CMakeFiles/prove.dir
+/home/gabriel/CLionProjects/prove/cmake-build-debug/CMakeFiles/prove_autogen.dir
