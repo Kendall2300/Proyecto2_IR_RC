@@ -7,8 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
-  "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/CMakeFiles/3.20.2/CMakeSystem.cmake"
+  "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
+  "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/3.20.2/CMakeSystem.cmake"
   "/home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order/CMakeLists.txt"
   "/home/gabriel/clion-2021.2.2/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
   "/home/gabriel/clion-2021.2.2/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"

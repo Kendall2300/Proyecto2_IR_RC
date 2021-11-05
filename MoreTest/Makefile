@@ -57,10 +57,10 @@ RM = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest"
+CMAKE_SOURCE_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest"
+CMAKE_BINARY_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/CMakeFiles" "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

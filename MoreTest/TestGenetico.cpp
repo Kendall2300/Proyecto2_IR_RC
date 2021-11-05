@@ -1,18 +1,19 @@
+//Include libraries
 #include <QApplication>
 #include <QWidget>
 #include <QPushButton>
 #include <opencv2/opencv.hpp>
 #include <QFileDialog>
 #include <QLabel>
-
 #include "TestGenetico.h"
 #include <QGridLayout>
 #include <QFileDialog>
 #include <opencv2/opencv.hpp>
+
 using namespace cv;
 using namespace std;
 
-
+//Defining variables
 int frows, fcols;
 int ppn, plen;
 int mrate = 2;
@@ -26,6 +27,7 @@ bool eWhite = true;
 int srow, scol, erow, ecol;
 string readFile;
 
+//Struct with methods for Genetic Algorithm
 struct Species
 {
 public:
@@ -33,6 +35,7 @@ public:
     int _rw, _cl;
     int index;
 
+    //Defines the proc fitness
     void setFit()
     {
         int cnt = 0;
@@ -48,6 +51,7 @@ public:
         fit = (fit * fit) / 1000;
     }
 
+    //Places random colors per pixels
     void allocate(int rw, int cl)
     {
         _rw = rw;
@@ -72,6 +76,7 @@ public:
         c_index++;
     }
 
+    //Duplicates the Mat
     void copyImg(Mat m)
     {
         for (int i = 0; i < m.rows; i++)
@@ -84,6 +89,7 @@ public:
         }
     }
 
+    //Depending on the fitness it randomizes the color of certain pixel
     void mutate()
     {
         for (int i = 0; i < _rw; i++)
@@ -101,6 +107,7 @@ public:
     }
 };
 
+//Values certain pixels with the reference pixels
 void breed(int place, Species a, Species b, int refI)
 {
     int ref = refI - 7;
@@ -127,107 +134,20 @@ void breed(int place, Species a, Species b, int refI)
     }
 }
 
+//Return fitness
 bool sortRule(Species a, Species b)
 {
     return a.fit > b.fit;
 }
 
-int TestGenetic(){srand(time(NULL));
+//Main function of Genetic Algorithm
+int TestGenetic(){
+    srand(time(NULL));
+
 
     Mat target, proc;
     target = imread(readFile, 0);
     namedWindow("Display Image", WINDOW_AUTOSIZE);
-
-//    --------------------------------------------------------------
-//      Test
-
-//    Mat target, proc;
-//    target = imread("zz.png", 1);
-//
-//    rectangle(target, Point(50,25), Point(100, 75), Scalar(255,0,0));
-//
-//    namedWindow("Display Image", WINDOW_AUTOSIZE);
-//
-//    imshow("Display Image", target);
-//    waitKey(0);
-
-
-//      -------------       ----------------        --------------    ------------ Masks
-////  BGR
-////  Get red
-//    Mat OutImg, OutRed;
-//    inRange(target, Scalar(0, 0, 95), Scalar(150, 150, 255) , OutImg);
-////    bitwise_and(OutImg, target, OutRed);
-//
-////  Get blue
-//    Mat OutImg2;
-//    inRange(target, Scalar(100, 0, 0), Scalar(255, 210, 210) , OutImg2);
-//
-////  Get green
-//    Mat OutImg3;
-//    inRange(target, Scalar(0, 100, 0), Scalar(100, 255, 100) , OutImg3);
-//
-////  Get white
-//    Mat OutImg4;
-//    inRange(target, Scalar(240, 240, 240), Scalar(255, 255, 255) , OutImg4);
-//
-//    int x1, x2, x3;
-//    x1 = countNonZero(OutImg);
-//    x2 = countNonZero(OutImg2);
-//    x3 = countNonZero(OutImg3);
-//
-//    if(x1>x2+x3){
-//        cout << "Red" << endl;
-//    }
-//    if(x2>x1+x3){
-//        cout << "Blue" << endl;
-//    }
-//    if(x3>x1+x2){
-//        cout << "Green" << endl;
-//    }
-//
-//    cout << x1 << "  " << x2 << "  " << x3 << endl;
-//
-//    frows = OutImg4.rows;
-//    fcols = OutImg4.cols;
-//    int srow, scol, erow, ecol;
-//
-//
-//    for (int i = 0; i < frows; i++)
-//    {
-//        for (int j = 0; j < fcols; j++)
-//        {
-//            if(sWhite){
-//                if(OutImg4.at<uchar>(i,j) == 255){
-//                    srow = i;
-//                    scol = j;
-//                    cout << srow << " & " << scol << endl;
-//                    sWhite = false;
-//                }
-//            }
-//        }
-//    }
-//
-//    for (int i = frows-1; i > 0; i--)
-//    {
-//        for (int j = fcols-1; j > 0; j--)
-//        {
-//            if(eWhite){
-//                if(OutImg4.at<uchar>(i,j) == 255){
-//                    erow = i;
-//                    ecol = j;
-//                    cout << erow << " & " << ecol << endl;
-//                    eWhite = false;
-//                }
-//            }
-//        }
-//    }
-//
-//    namedWindow("Output Image", WINDOW_AUTOSIZE);
-//    imshow("Output Image", OutImg4); //Cambia segun el color
-//    waitKey(0);
-
-//    --------------------------------------------------------------------- EndTest
 
     proc = target;
 
@@ -353,7 +273,7 @@ int TestGenetic(){srand(time(NULL));
     delete ndata;
     return 0;
 }
-
+//Defining the Main Window appearance
 PlusMinus::PlusMinus(QWidget *parent)
         : QWidget(parent) {
 
@@ -375,6 +295,7 @@ PlusMinus::PlusMinus(QWidget *parent)
     connect(closeBtn, &QPushButton::clicked, this, &QApplication::quit);
 }
 
+//Loading image file from main directory
 void PlusMinus::OnPlus() {
 
     QString filename= QFileDialog::getOpenFileName(this, tr("Chose"), "", tr("Images(*.png *.jpg *.jpeg *.gif)"));
@@ -393,10 +314,12 @@ void PlusMinus::OnPlus() {
         }
     }
 }
+//Execute TestGenetic() for interface
  void PlusMinus::genetic(){
     TestGenetic();
 }
 
+//Execute main Window of QT
 int main(int argc, char *argv[]) {
 
     QApplication app(argc, argv);

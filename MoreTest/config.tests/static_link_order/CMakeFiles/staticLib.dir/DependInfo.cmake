@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order/staticlib1.cpp" "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order/CMakeFiles/staticLib.dir/staticlib1.cpp.o"
-  "/home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order/staticlib2.cpp" "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order/CMakeFiles/staticLib.dir/staticlib2.cpp.o"
+  "/home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order/staticlib1.cpp" "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order/CMakeFiles/staticLib.dir/staticlib1.cpp.o"
+  "/home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order/staticlib2.cpp" "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order/CMakeFiles/staticLib.dir/staticlib2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

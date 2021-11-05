@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/gabriel/Qt/6.2.0/gcc_64/lib/cmake/Qt6/config.tests/static_link_order
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order"
+CMAKE_BINARY_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order/CMakeFiles" "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order/CMakeFiles /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel/Escritorio/Proyecto2_IR_RC aa/MoreTest/config.tests/static_link_order/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/config.tests/static_link_order/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
