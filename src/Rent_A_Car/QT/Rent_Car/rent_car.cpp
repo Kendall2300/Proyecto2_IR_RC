@@ -1,16 +1,32 @@
+/**
+ * @file rent_car.cpp
+ * @authors Kendall Martinez Carvajal (kendallmc@estudiantec.cr) && Jose Umana Rivera
+ * @brief Este codigo contiene la declaracion de los metodos, funciones necesarias para construir,
+ * modificar y mostrar el proyecto de forma grafica
+ *
+ * @version 1.0
+ *
+ * @copyright Copyright (c) 2021
+ */
 #include "rent_car.h"
 #include "ui_rent_car.h"
 #include "QMessageBox"
 #include "Grafo.h"
 #include "iostream"
 #include "QString"
+/**
+ * @brief Rent_Car::Rent_Car
+ * @param parent
+ */
 Rent_Car::Rent_Car(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Rent_Car)
 {
     ui->setupUi(this);
 }
-
+/**
+ * @brief Rent_Car::~Rent_Car
+ */
 Rent_Car::~Rent_Car()
 {
     delete ui;
@@ -18,6 +34,12 @@ Rent_Car::~Rent_Car()
 
 int Vertices=0;
 Grafo GR;
+
+/**
+ * @brief Rent_Car::on_pushButton_aceptar_Cciudades_clicked EL metodo permite aceptar un texto y llevar
+ * a cabo la creacion aleatoria del grafo para el proyecto, asi como mostrar la lista de adyacencia
+ * correspondiente con el grafo generado
+ */
 void Rent_Car::on_pushButton_aceptar_Cciudades_clicked()
 {  
     QString ingreso_ciudades=ui->lineEdit_ciudades->text();
@@ -61,6 +83,9 @@ void Rent_Car::on_pushButton_aceptar_Cciudades_clicked()
 
 }
 
+/**
+ * @brief Rent_Car::on_pushButton_clicked Se encarga de mostrar los resultados del analisis realizado por el algoritmo de backtraking
+ */
 void Rent_Car::on_pushButton_clicked()
 {
     QString ciudad_origen=ui->lineEdit_ciudad_origen->text();

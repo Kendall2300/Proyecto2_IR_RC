@@ -1,3 +1,12 @@
+/**
+ * @file main.cpp
+ * @authors Kendall Martinez Carvajal (kendallmc@estudiantec.cr) && Jose Umana Rivera
+ * @brief Este codigo contiene las llamadas para mostrar la interfaz grafica del proyecto
+ *
+ * @version 1.0
+ *
+ * @copyright Copyright (c) 2021
+ */
 #include "rent_car.h"
 
 #include <QApplication>

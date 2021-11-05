@@ -10,17 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     Grafo.cpp \
-    graph_view.cpp \
     main.cpp \
     rent_car.cpp
 
 HEADERS += \
     Grafo.h \
-    graph_view.h \
     rent_car.h
 
 FORMS += \
-    graph_view.ui \
     rent_car.ui
 
 TRANSLATIONS += \
