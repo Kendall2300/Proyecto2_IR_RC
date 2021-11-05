@@ -1,3 +1,5 @@
+
+
 //Include libraries
 #include <QApplication>
 #include <QWidget>
@@ -35,7 +37,12 @@ public:
     int _rw, _cl;
     int index;
 
+
     //Defines the proc fitness
+    //! \brief Se encarga de dar el fitness al proc
+    //!
+    //! \param int refI
+    //!
     void setFit(int refI)
     {
         int ref = refI - 7;
@@ -53,6 +60,11 @@ public:
     }
 
     //Places random colors per pixels
+    //! \brief Se encarga de situar colores aleatorios por pixel
+    //!
+    //! \param int rw
+    //! \param int cl
+    //!
     void allocate(int rw, int cl)
     {
         _rw = rw;
@@ -78,6 +90,10 @@ public:
     }
 
     //Duplicates the Mat
+    //! \brief Se encarga de duplicar el Mat
+    //!
+    //! \param Mat m
+    //!
     void copyImg(Mat m)
     {
         for (int i = 0; i < m.rows; i++)
@@ -91,6 +107,9 @@ public:
     }
 
     //Depending on the fitness it randomizes the color of certain pixel
+    //! \brief Se encarga de variar el color de ciertos pixeles dependiendo del fitness
+    //!
+    //!
     void mutate()
     {
         for (int i = 0; i < _rw; i++)
@@ -109,6 +128,13 @@ public:
 };
 
 //Values certain pixels with the reference pixels
+//! \brief Se encarga de evaluar ciertos piexeles con respecto a los de referencia
+//!
+//! \param int place
+//! \param Species a
+//! \param Species b
+//! \param int refI
+//!
 void breed(int place, Species a, Species b, int refI)
 {
     int ref = refI - 7;
@@ -136,12 +162,20 @@ void breed(int place, Species a, Species b, int refI)
 }
 
 //Return fitness
+//! \brief Devuelve el fitness
+//!
+//! \param Species a
+//! \param Species b
+//!
 bool sortRule(Species a, Species b)
 {
     return a.fit > b.fit;
 }
 
 //Main function of Genetic Algorithm
+
+//! \brief Funcion principal que corre el algoritmo genetico con respecto al Struct
+//!
 int TestGenetic(){
     srand(time(NULL));
 
@@ -297,6 +331,8 @@ PlusMinus::PlusMinus(QWidget *parent)
 }
 
 //Loading image file from main directory
+//! \brief Agrega la imagen a la interfaz mediante busqueda en el directorio
+//!
 void PlusMinus::OnPlus() {
 
     QString filename= QFileDialog::getOpenFileName(this, tr("Chose"), "", tr("Images(*.png *.jpg *.jpeg *.gif)"));
@@ -316,11 +352,15 @@ void PlusMinus::OnPlus() {
     }
 }
 //Execute TestGenetic() for interface
+//! \brief Corre la funcion TestGenetico
+//!
  void PlusMinus::genetic(){
     TestGenetic();
 }
 
 //Execute main Window of QT
+//! \brief Llama a la interfaz principal
+//!
 int main(int argc, char *argv[]) {
 
     QApplication app(argc, argv);

@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp
+Change Dir: /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0144f/fast && /usr/bin/make  -f CMakeFiles/cmTC_0144f.dir/build.make CMakeFiles/cmTC_0144f.dir/build
-make[1]: Entering directory '/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0144f.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0144f.dir/src.c.o -c /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_0144f
-/home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0144f.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_0144f.dir/src.c.o -o cmTC_0144f 
-/usr/bin/ld: CMakeFiles/cmTC_0144f.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
-/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_31fe8/fast && /usr/bin/make  -f CMakeFiles/cmTC_31fe8.dir/build.make CMakeFiles/cmTC_31fe8.dir/build
+make[1]: se entra en el directorio '/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31fe8.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_31fe8.dir/src.c.o -c /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_31fe8
+/home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31fe8.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_31fe8.dir/src.c.o -o cmTC_31fe8 
+/usr/bin/ld: CMakeFiles/cmTC_31fe8.dir/src.c.o: en la función `main':
+src.c:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.c:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.c:(.text+0x5e): referencia a `pthread_cancel' sin definir
+/usr/bin/ld: src.c:(.text+0x6f): referencia a `pthread_join' sin definir
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_0144f.dir/build.make:99: cmTC_0144f] Error 1
-make[1]: Leaving directory '/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_0144f/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_31fe8.dir/build.make:99: cmTC_31fe8] Error 1
+make[1]: se sale del directorio '/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_31fe8/fast] Error 2
 
 
 Source file was:
