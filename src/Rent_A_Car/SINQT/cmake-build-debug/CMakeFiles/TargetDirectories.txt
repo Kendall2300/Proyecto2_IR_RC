@@ -1,3 +1,0 @@
-/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/cmake-build-debug/CMakeFiles/Rent_A_Car.dir

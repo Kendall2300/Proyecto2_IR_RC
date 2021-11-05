@@ -1,4 +1,0 @@
-/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car
--- Configuring done
--- Generating done
--- Build files have been written to: /home/kendall/Escritorio/Proyectos/Proyecto2_IR_RC/src/Rent_A_Car/cmake-build-debug

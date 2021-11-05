@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Rent_A_Car.dir/main.cpp.o CMakeFiles/Rent_A_Car.dir/Grafo.cpp.o -o Rent_A_Car 
