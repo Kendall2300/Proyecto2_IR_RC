@@ -1,0 +1,208 @@
+\hypertarget{class_grafo}{}\doxysection{Grafo Class Reference}
+\label{class_grafo}\index{Grafo@{Grafo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grafo_ad0ae89382a426e06cedf7168dc474820}\label{class_grafo_ad0ae89382a426e06cedf7168dc474820}} 
+void {\bfseries Inicializa} ()
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de inicializar el grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_grafo_a58d7b12e5bbcd312f3eff63686153fad}{Vacio}} ()
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de revisar si el grafo se encuentra vacio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_grafo_ac8bf9ba4da1bb9e4203b00c052ec30b2}{Tamano}} ()
+\begin{DoxyCompactList}\small\item\em Este metodo te devuelve la cantidad de Vertices que posee el grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$ \mbox{\hyperlink{class_grafo_a0dee69f218e7abad376559c61a8fceb0}{Get\+Vertice}} (string nombre)
+\begin{DoxyCompactList}\small\item\em Este metodo te recupera el nombre de un vertice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_a8a2ce365b1ecad36b04fdf0d47d35faf}{Inserta\+Arista}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$origen, \mbox{\hyperlink{class_vertice}{Vertice}} $\ast$destino, int peso)
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de insertar las aristas entre los vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_a2b358e86c064ec4cb6c1d7ce06dedeca}{Inserta\+Vertice}} (string nombre)
+\begin{DoxyCompactList}\small\item\em ESte metodo se encarga de insertar los vertices en el grafo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grafo_a8d6c2270bd906adc4d28e110bb95160d}\label{class_grafo_a8d6c2270bd906adc4d28e110bb95160d}} 
+string {\bfseries Lista\+Adyacencia} ()
+\begin{DoxyCompactList}\small\item\em Este metodo te imprime la lista de adyacencia correspodiente al grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_a7b6dbeabc58343769bd818ec94b0c0c8}{Eliminar\+Arista}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$origen, \mbox{\hyperlink{class_vertice}{Vertice}} $\ast$destino)
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de eliminar las aristas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grafo_a4712fab152a749bf679255f5b4f4b6e9}\label{class_grafo_a4712fab152a749bf679255f5b4f4b6e9}} 
+void {\bfseries Anular} ()
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de destruir el grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_a373cc9417cfc8a8ddaee931a3f72881a}{Eliminar\+Vertice}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$vert)
+\begin{DoxyCompactList}\small\item\em ESte metodo se encarga de eliminar un vertice especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_aedea14eacca78163f1414ce8e8b15173}{Recorrido\+Profundidad}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$origen)
+\begin{DoxyCompactList}\small\item\em ESte metodo encuentra todos los vertices que tengan conexion entre si. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grafo_ad0341880ee4f6d96433af1455cf4c24d}{Primero\+Profundidad}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$origen, \mbox{\hyperlink{class_vertice}{Vertice}} $\ast$destino)
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo de forma voraz. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_grafo_af7be1599d8350e3c856af0c7a86f49d4}{Primero\+Mejor}} (\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$origen, \mbox{\hyperlink{class_vertice}{Vertice}} $\ast$destino)
+\begin{DoxyCompactList}\small\item\em Este metodo se encarga de recorrer el grafo y de paso calcular la ruta que sera de menor costo usando bactraking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grafo_a28ff7fc8b3c2976e30f4d82a14f38ec3}\label{class_grafo_a28ff7fc8b3c2976e30f4d82a14f38ec3}} 
+string {\bfseries lavel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grafo_a7b6dbeabc58343769bd818ec94b0c0c8}\label{class_grafo_a7b6dbeabc58343769bd818ec94b0c0c8}} 
+\index{Grafo@{Grafo}!EliminarArista@{EliminarArista}}
+\index{EliminarArista@{EliminarArista}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{EliminarArista()}{EliminarArista()}}
+{\footnotesize\ttfamily void Grafo\+::\+Eliminar\+Arista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{origen,  }\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{destino }\end{DoxyParamCaption})}
+
+
+
+Este metodo se encarga de eliminar las aristas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origen} & \mbox{\hyperlink{class_vertice}{Vertice}} que se corresponde al origen \\
+\hline
+{\em destino} & \mbox{\hyperlink{class_vertice}{Vertice}} que corresponde al destino \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_a373cc9417cfc8a8ddaee931a3f72881a}\label{class_grafo_a373cc9417cfc8a8ddaee931a3f72881a}} 
+\index{Grafo@{Grafo}!EliminarVertice@{EliminarVertice}}
+\index{EliminarVertice@{EliminarVertice}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{EliminarVertice()}{EliminarVertice()}}
+{\footnotesize\ttfamily void Grafo\+::\+Eliminar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{vert }\end{DoxyParamCaption})}
+
+
+
+ESte metodo se encarga de eliminar un vertice especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vert} & Un \mbox{\hyperlink{class_vertice}{Vertice}} que corresponde al que se desea eliminar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_a0dee69f218e7abad376559c61a8fceb0}\label{class_grafo_a0dee69f218e7abad376559c61a8fceb0}} 
+\index{Grafo@{Grafo}!GetVertice@{GetVertice}}
+\index{GetVertice@{GetVertice}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{GetVertice()}{GetVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertice}{Vertice}} $\ast$ Grafo\+::\+Get\+Vertice (\begin{DoxyParamCaption}\item[{string}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Este metodo te recupera el nombre de un vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & A string que contiene el nombre de un vertice del grafo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grafo_a8a2ce365b1ecad36b04fdf0d47d35faf}\label{class_grafo_a8a2ce365b1ecad36b04fdf0d47d35faf}} 
+\index{Grafo@{Grafo}!InsertaArista@{InsertaArista}}
+\index{InsertaArista@{InsertaArista}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{InsertaArista()}{InsertaArista()}}
+{\footnotesize\ttfamily void Grafo\+::\+Inserta\+Arista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{origen,  }\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{destino,  }\item[{int}]{peso }\end{DoxyParamCaption})}
+
+
+
+Este metodo se encarga de insertar las aristas entre los vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origen} & A \mbox{\hyperlink{class_vertice}{Vertice}} una referencia al vertice del origen \\
+\hline
+{\em destino} & A \mbox{\hyperlink{class_vertice}{Vertice}} una referencia al vertice del destino \\
+\hline
+{\em peso} & A int que corresponde al valor de la arista \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_a2b358e86c064ec4cb6c1d7ce06dedeca}\label{class_grafo_a2b358e86c064ec4cb6c1d7ce06dedeca}} 
+\index{Grafo@{Grafo}!InsertaVertice@{InsertaVertice}}
+\index{InsertaVertice@{InsertaVertice}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{InsertaVertice()}{InsertaVertice()}}
+{\footnotesize\ttfamily void Grafo\+::\+Inserta\+Vertice (\begin{DoxyParamCaption}\item[{string}]{nombre }\end{DoxyParamCaption})}
+
+
+
+ESte metodo se encarga de insertar los vertices en el grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & A string que corresponde al nombre del vertice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_af7be1599d8350e3c856af0c7a86f49d4}\label{class_grafo_af7be1599d8350e3c856af0c7a86f49d4}} 
+\index{Grafo@{Grafo}!PrimeroMejor@{PrimeroMejor}}
+\index{PrimeroMejor@{PrimeroMejor}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{PrimeroMejor()}{PrimeroMejor()}}
+{\footnotesize\ttfamily string Grafo\+::\+Primero\+Mejor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{origen,  }\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{destino }\end{DoxyParamCaption})}
+
+
+
+Este metodo se encarga de recorrer el grafo y de paso calcular la ruta que sera de menor costo usando bactraking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origen} & Un vertice que sera el punto de partida \\
+\hline
+{\em destino} & Un vertice que sera el punto de llegada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_ad0341880ee4f6d96433af1455cf4c24d}\label{class_grafo_ad0341880ee4f6d96433af1455cf4c24d}} 
+\index{Grafo@{Grafo}!PrimeroProfundidad@{PrimeroProfundidad}}
+\index{PrimeroProfundidad@{PrimeroProfundidad}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{PrimeroProfundidad()}{PrimeroProfundidad()}}
+{\footnotesize\ttfamily void Grafo\+::\+Primero\+Profundidad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{origen,  }\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{destino }\end{DoxyParamCaption})}
+
+
+
+Este metodo se encarga de Recorrer el grafo y de paso calcular la ruta que sera de menor costo de forma voraz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origen} & Un vertice que sera el punto de partida \\
+\hline
+{\em destino} & Un vertice que corresponde al de llegada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_aedea14eacca78163f1414ce8e8b15173}\label{class_grafo_aedea14eacca78163f1414ce8e8b15173}} 
+\index{Grafo@{Grafo}!RecorridoProfundidad@{RecorridoProfundidad}}
+\index{RecorridoProfundidad@{RecorridoProfundidad}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{RecorridoProfundidad()}{RecorridoProfundidad()}}
+{\footnotesize\ttfamily void Grafo\+::\+Recorrido\+Profundidad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertice}{Vertice}} $\ast$}]{origen }\end{DoxyParamCaption})}
+
+
+
+ESte metodo encuentra todos los vertices que tengan conexion entre si. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origen} & Un \mbox{\hyperlink{class_vertice}{Vertice}} que corresponde al vertice del que partes a invertigar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grafo_ac8bf9ba4da1bb9e4203b00c052ec30b2}\label{class_grafo_ac8bf9ba4da1bb9e4203b00c052ec30b2}} 
+\index{Grafo@{Grafo}!Tamano@{Tamano}}
+\index{Tamano@{Tamano}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{Tamano()}{Tamano()}}
+{\footnotesize\ttfamily int Grafo\+::\+Tamano (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Este metodo te devuelve la cantidad de Vertices que posee el grafo. 
+
+\begin{DoxyReturn}{Returns}
+An int que es el numero de vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_grafo_a58d7b12e5bbcd312f3eff63686153fad}\label{class_grafo_a58d7b12e5bbcd312f3eff63686153fad}} 
+\index{Grafo@{Grafo}!Vacio@{Vacio}}
+\index{Vacio@{Vacio}!Grafo@{Grafo}}
+\doxysubsubsection{\texorpdfstring{Vacio()}{Vacio()}}
+{\footnotesize\ttfamily bool Grafo\+::\+Vacio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Este metodo se encarga de revisar si el grafo se encuentra vacio. 
+
+\begin{DoxyReturn}{Returns}
+A boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rent\+\_\+\+Car/\mbox{\hyperlink{_grafo_8h}{Grafo.\+h}}\item 
+Rent\+\_\+\+Car/\mbox{\hyperlink{_grafo_8cpp}{Grafo.\+cpp}}\end{DoxyCompactItemize}
