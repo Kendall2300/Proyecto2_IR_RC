@@ -1,0 +1,4 @@
+/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/rebuild_cache.dir
+/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/edit_cache.dir
+/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir
+/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico_autogen.dir

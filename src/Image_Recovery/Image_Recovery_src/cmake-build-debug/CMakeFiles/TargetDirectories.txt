@@ -1,0 +1,3 @@
+/home/dlurena24/CLionProjects/TestGenetico/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dlurena24/CLionProjects/TestGenetico/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dlurena24/CLionProjects/TestGenetico/cmake-build-debug/CMakeFiles/TestGenetico.dir
