@@ -49,9 +49,6 @@ public:
     QGroupBox *groupBox_4;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_algoritmo_result;
-    QGroupBox *groupBox_5;
-    QHBoxLayout *horizontalLayout_6;
-    QLabel *label_algoritmo_view;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -140,23 +137,13 @@ public:
 
         groupBox_4 = new QGroupBox(centralwidget);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(540, 140, 351, 101));
+        groupBox_4->setGeometry(QRect(540, 140, 331, 271));
         verticalLayout_4 = new QVBoxLayout(groupBox_4);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         label_algoritmo_result = new QLabel(groupBox_4);
         label_algoritmo_result->setObjectName(QString::fromUtf8("label_algoritmo_result"));
 
         verticalLayout_4->addWidget(label_algoritmo_result);
-
-        groupBox_5 = new QGroupBox(centralwidget);
-        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        groupBox_5->setGeometry(QRect(540, 250, 351, 161));
-        horizontalLayout_6 = new QHBoxLayout(groupBox_5);
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        label_algoritmo_view = new QLabel(groupBox_5);
-        label_algoritmo_view->setObjectName(QString::fromUtf8("label_algoritmo_view"));
-
-        horizontalLayout_6->addWidget(label_algoritmo_view);
 
         Rent_Car->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Rent_Car);
@@ -184,10 +171,8 @@ public:
         label->setText(QCoreApplication::translate("Rent_Car", "Ciudad partida:", nullptr));
         label_2->setText(QCoreApplication::translate("Rent_Car", "Ciudad destino:", nullptr));
         pushButton->setText(QCoreApplication::translate("Rent_Car", "Buscar", nullptr));
-        groupBox_4->setTitle(QCoreApplication::translate("Rent_Car", "Mejor camino", nullptr));
+        groupBox_4->setTitle(QCoreApplication::translate("Rent_Car", "Resultados del Algoritmo", nullptr));
         label_algoritmo_result->setText(QString());
-        groupBox_5->setTitle(QCoreApplication::translate("Rent_Car", "Preview del algoritmo", nullptr));
-        label_algoritmo_view->setText(QString());
     } // retranslateUi
 
 };

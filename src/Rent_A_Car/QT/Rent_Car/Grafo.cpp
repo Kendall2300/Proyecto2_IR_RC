@@ -406,7 +406,7 @@ bool Comparacion(pair <Vertice*, int> a, pair<Vertice*, int> b)
 string Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
 {
     int CostoActual, band, band2, CostoAnterior;
-    string resultado_costo, resultado_camino,resultado_ordenado;
+    string resultado_costo, resultado_camino,resultado_ordenado,pasos_algoritmo;
     Vertice *VerticeActual, *DestinoActual;
     Arista *aux;
     typedef pair<Vertice*, int> VerticeCosto;
@@ -480,7 +480,8 @@ string Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
                         ListaOrdenada.sort(Comparacion);
                         pila.push(VerticeVertice(VerticeActual, aux->ady));
                         CostoActual = CostoAnterior;
-                        //CostoActual = CostoActual - aux->peso;
+                        pasos_algoritmo+=VerticeActual->nombre+"->";
+                        pasos_algoritmo+=aux->ady->nombre+"\n";
                     }
                 }
             }
@@ -490,8 +491,10 @@ string Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
                 ListaOrdenada.push_back(VerticeCosto(aux->ady, CostoActual));
                 ListaOrdenada.sort(Comparacion);
                 pila.push(VerticeVertice(VerticeActual, aux->ady));
+                pasos_algoritmo+=VerticeActual->nombre+"->";
+                pasos_algoritmo+=aux->ady->nombre+"\n";
                 CostoActual = CostoAnterior;
-                //CostoActual = CostoActual - aux->peso;
+
             }
 
             aux = aux->sig;
@@ -501,6 +504,8 @@ string Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
     {
         cout<<"No hay una ruta entre esos dos vertices"<<endl;
     }
-    resultado_ordenado="El camino a seguir es: "+resultado_camino+"\n"+"El tanque neceasrio para el recorrido es: "+resultado_costo+"\n";
+    resultado_ordenado="El camino a seguir es: "+resultado_camino+"\n"+
+            "El tanque neceasrio para el recorrido es: "+resultado_costo+"\n"+"\n"
+            +"Los pasos que realizo el algoritmo son: \n"+pasos_algoritmo;
     return resultado_ordenado;
 }
