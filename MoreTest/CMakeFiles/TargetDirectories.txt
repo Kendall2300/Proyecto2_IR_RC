@@ -1,4 +1,4 @@
-/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/rebuild_cache.dir
-/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/edit_cache.dir
-/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir
-/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico_autogen.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/rebuild_cache.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/edit_cache.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico_autogen.dir

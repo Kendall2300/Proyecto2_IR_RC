@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_SOURCE_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_BINARY_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TestGenetico.dir/depend.make
@@ -68,29 +68,29 @@ include CMakeFiles/TestGenetico.dir/flags.make
 
 CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o: CMakeFiles/TestGenetico.dir/flags.make
 CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o: TestGenetico_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o -c /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o -c /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp
 
 CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp > CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp > CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp -o CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp -o CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o: CMakeFiles/TestGenetico.dir/flags.make
 CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o: TestGenetico.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o -c /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o -c /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp
 
 CMakeFiles/TestGenetico.dir/TestGenetico.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestGenetico.dir/TestGenetico.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp > CMakeFiles/TestGenetico.dir/TestGenetico.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp > CMakeFiles/TestGenetico.dir/TestGenetico.cpp.i
 
 CMakeFiles/TestGenetico.dir/TestGenetico.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestGenetico.dir/TestGenetico.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp -o CMakeFiles/TestGenetico.dir/TestGenetico.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp -o CMakeFiles/TestGenetico.dir/TestGenetico.cpp.s
 
 # Object files for target TestGenetico
 TestGenetico_OBJECTS = \
@@ -103,7 +103,7 @@ TestGenetico_EXTERNAL_OBJECTS =
 TestGenetico: CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o
 TestGenetico: CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o
 TestGenetico: CMakeFiles/TestGenetico.dir/build.make
-TestGenetico: /home/gabriel/Qt/6.2.0/gcc_64/lib/libQt6Widgets.so.6.2.0
+TestGenetico: /home/dlurena24/Programs/Qt/6.0.4/gcc_64/lib/libQt6Widgets.so.6.0.4
 TestGenetico: /usr/local/lib/libopencv_gapi.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_highgui.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_ml.so.4.5.4
@@ -112,8 +112,8 @@ TestGenetico: /usr/local/lib/libopencv_photo.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_stitching.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_video.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_videoio.so.4.5.4
-TestGenetico: /home/gabriel/Qt/6.2.0/gcc_64/lib/libQt6Gui.so.6.2.0
-TestGenetico: /home/gabriel/Qt/6.2.0/gcc_64/lib/libQt6Core.so.6.2.0
+TestGenetico: /home/dlurena24/Programs/Qt/6.0.4/gcc_64/lib/libQt6Gui.so.6.0.4
+TestGenetico: /home/dlurena24/Programs/Qt/6.0.4/gcc_64/lib/libQt6Core.so.6.0.4
 TestGenetico: /usr/lib/x86_64-linux-gnu/libGLX.so
 TestGenetico: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 TestGenetico: /usr/local/lib/libopencv_imgcodecs.so.4.5.4
@@ -124,7 +124,7 @@ TestGenetico: /usr/local/lib/libopencv_flann.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_imgproc.so.4.5.4
 TestGenetico: /usr/local/lib/libopencv_core.so.4.5.4
 TestGenetico: CMakeFiles/TestGenetico.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TestGenetico"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TestGenetico"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestGenetico.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/TestGenetico.dir/clean:
 .PHONY : CMakeFiles/TestGenetico.dir/clean
 
 CMakeFiles/TestGenetico.dir/depend:
-	cd /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TestGenetico.dir/depend
 

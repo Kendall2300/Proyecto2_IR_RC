@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_SOURCE_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_BINARY_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/TestGenetico_autogen.dir/clean
 CMakeFiles/TestGenetico.dir/all: CMakeFiles/TestGenetico_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico.dir/build.make CMakeFiles/TestGenetico.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico.dir/build.make CMakeFiles/TestGenetico.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=1,2,3 "Built target TestGenetico"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=1,2,3 "Built target TestGenetico"
 .PHONY : CMakeFiles/TestGenetico.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TestGenetico.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TestGenetico.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles 0
 .PHONY : CMakeFiles/TestGenetico.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/TestGenetico.dir/clean:
 CMakeFiles/TestGenetico_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico_autogen.dir/build.make CMakeFiles/TestGenetico_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestGenetico_autogen.dir/build.make CMakeFiles/TestGenetico_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=4 "Built target TestGenetico_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=4 "Built target TestGenetico_autogen"
 .PHONY : CMakeFiles/TestGenetico_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TestGenetico_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TestGenetico_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/MoreTest/CMakeFiles 0
 .PHONY : CMakeFiles/TestGenetico_autogen.dir/rule
 
 # Convenience name for target.

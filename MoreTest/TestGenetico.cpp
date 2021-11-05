@@ -36,8 +36,9 @@ public:
     int index;
 
     //Defines the proc fitness
-    void setFit()
+    void setFit(int refI)
     {
+        int ref = refI - 7;
         int cnt = 0;
         for (int i = 0; i < _rw; i++)
         {
@@ -231,13 +232,13 @@ int TestGenetic(){
     for (int i = 0; i < ppn; i++)
     {
         ppl[i].allocate(frows, fcols);
-        ppl[i].setFit();
+        ppl[i].setFit(srow);
     }
     while (!found)
     {
         for (int i = 0; i < ppn; i++)
         {
-            ppl[i].setFit();
+            ppl[i].setFit(srow);
             if (ppl[i].fit > 990)
                 found = true;
         }
