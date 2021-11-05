@@ -1,7 +1,14 @@
-#include "TestGenetico.h"
-
+#include <QApplication>
+#include <QWidget>
+#include <QPushButton>
 #include <opencv2/opencv.hpp>
+#include <QFileDialog>
+#include <QLabel>
 
+#include "TestGenetico.h"
+#include <QGridLayout>
+#include <QFileDialog>
+#include <opencv2/opencv.hpp>
 using namespace cv;
 using namespace std;
 
@@ -12,7 +19,7 @@ int mrate = 2;
 int c_index;
 bool found = false;
 uchar **best;
-uchar ***data, ***ndata;
+uchar ***dataa, ***ndata;
 int *mpool;
 bool sWhite = true;
 bool eWhite = true;
@@ -33,7 +40,7 @@ public:
         {
             for (int j = 0; j < _cl; j++)
             {
-                if (data[index][i][j] == best[ref][j])
+                if (dataa[index][i][j] == best[ref][j])
                     cnt++;
             }
         }
@@ -50,16 +57,16 @@ public:
             if(i > srow && i < erow){
                 for (int j = 0; j < _cl; j++) {
                     if (j > scol && j < ecol) {
-                        data[c_index][i][j] = rand() % 256;
+                        dataa[c_index][i][j] = rand() % 256;
                     }
                     else {
-                        data[c_index][i][j] = best[i][j];
+                        dataa[c_index][i][j] = best[i][j];
                     }
                 }
             }
             else{
                 for (int j = 0; j < _cl; j++) {
-                    data[c_index][i][j] = best[i][j];
+                    dataa[c_index][i][j] = best[i][j];
                 }
             }
         c_index++;
@@ -72,7 +79,7 @@ public:
             uchar *lin = m.ptr(i);
             for (int j = 0; j < m.cols; j++)
             {
-                lin[j] = (uchar)data[index][i][j];
+                lin[j] = (uchar)dataa[index][i][j];
             }
         }
     }
@@ -101,7 +108,7 @@ void breed(int place, Species a, Species b)
     {
         for (int j = 0; j < fcols; j++)
         {
-            if ((data[a.index][i][j] == best[ref][j]) || (data[b.index][i][j] == best[ref][j]))
+            if ((dataa[a.index][i][j] == best[ref][j]) || (dataa[b.index][i][j] == best[ref][j]))
             {
                 if (rand() % 10 == 0)
                     ndata[place][i][j] = best[ref][j];
@@ -112,9 +119,9 @@ void breed(int place, Species a, Species b)
             {
                 branch:
                 if (rand() % 2 == 0)
-                    ndata[place][i][j] = data[a.index][i][j];
+                    ndata[place][i][j] = dataa[a.index][i][j];
                 else
-                    ndata[place][i][j] = data[b.index][i][j];
+                    ndata[place][i][j] = dataa[b.index][i][j];
             }
         }
     }
@@ -125,7 +132,7 @@ bool sortRule(Species a, Species b)
     return a.fit > b.fit;
 }
 
-int main(){srand(time(NULL));
+int TestGenetic(){srand(time(NULL));
 
     Mat target, proc;
     target = imread("zz.png", 0);
@@ -286,12 +293,12 @@ int main(){srand(time(NULL));
     ppn = 80;
     mpool = new int[ppn * (ppn + 1) / 2];
 
-    data = new uchar **[ppn + 10];
+    dataa = new uchar **[ppn + 10];
     for (int i = 0; i < ppn + 10; i++)
     {
-        data[i] = new uchar *[frows];
+        dataa[i] = new uchar *[frows];
         for (int j = 0; j < frows; j++)
-            data[i][j] = new uchar[fcols];
+            dataa[i][j] = new uchar[fcols];
     }
     ndata = new uchar **[ppn + 10];
     for (int i = 0; i < ppn + 10; i++)
@@ -340,9 +347,64 @@ int main(){srand(time(NULL));
         }
         for (int i = 0; i < ppn; i++)
             ppl[i].mutate();
-        swap(data, ndata);
+        swap(dataa, ndata);
     }
-    delete data;
+    delete dataa;
     delete ndata;
     return 0;
+}
+
+PlusMinus::PlusMinus(QWidget *parent)
+        : QWidget(parent) {
+
+    auto *addBtn = new QPushButton("Subir Imagen", this);
+    auto *closeBtn = new QPushButton("Cerrar", this);
+    auto *runBtn = new QPushButton("Correr algoritmo", this);
+    lbl = new QLabel("", this);
+
+    auto *grid = new QGridLayout(this);
+    grid->addWidget(addBtn, 0, 0);
+    grid->addWidget(closeBtn, 2, 0);
+    grid->addWidget(runBtn, 1, 0);
+    grid->addWidget(lbl, 1, 2);
+
+    setLayout(grid);
+
+    connect(addBtn, &QPushButton::clicked, this, &PlusMinus::OnPlus);
+    connect(runBtn, &QPushButton::clicked, this, &PlusMinus::genetic);
+    connect(closeBtn, &QPushButton::clicked, this, &QApplication::quit);
+}
+
+void PlusMinus::OnPlus() {
+
+    QString filename= QFileDialog::getOpenFileName(this, tr("Chose"), "", tr("Images(*.png *.jpg *.jpeg *.gif)"));
+    if (QString::compare(filename, QString()) !=0)
+    {
+        QImage image;
+        bool vallid = image.load(filename);
+        if (vallid)        {
+            image = image.scaledToWidth(lbl->width(), Qt::SmoothTransformation);
+            lbl->setPixmap(QPixmap::fromImage(image));
+        }
+        else
+        {
+            // Error
+        }
+    }
+}
+ void PlusMinus::genetic(){
+    TestGenetic();
+}
+
+int main(int argc, char *argv[]) {
+
+    QApplication app(argc, argv);
+
+    PlusMinus window;
+
+    window.resize(600, 600);
+    window.setWindowTitle("Image Recovery");
+    window.show();
+
+    return app.exec();
 }
