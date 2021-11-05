@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest -I/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/include -isystem /home/gabriel/Qt/6.2.0/gcc_64/include/QtWidgets -isystem /home/gabriel/Qt/6.2.0/gcc_64/include -isystem /home/gabriel/Qt/6.2.0/gcc_64/include/QtCore -isystem /home/gabriel/Qt/6.2.0/gcc_64/mkspecs/linux-g++ -isystem /home/gabriel/Qt/6.2.0/gcc_64/include/QtGui -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src -I/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/TestGenetico_autogen/include -isystem /home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtWidgets -isystem /home/dlurena24/Programs/Qt/6.0.4/gcc_64/include -isystem /home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtCore -isystem /home/dlurena24/Programs/Qt/6.0.4/gcc_64/mkspecs/linux-g++ -isystem /home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtGui -isystem /usr/local/include/opencv4
 
 CXX_FLAGS =  -std=c++11 -g -fPIC -pthread -std=gnu++17
 

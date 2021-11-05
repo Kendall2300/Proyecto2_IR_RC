@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico.cpp" "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
-  "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/TestGenetico_autogen/mocs_compilation.cpp" "/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o"
+  "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/TestGenetico.cpp" "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/CMakeFiles/TestGenetico.dir/TestGenetico.cpp.o"
+  "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/TestGenetico_autogen/mocs_compilation.cpp" "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/CMakeFiles/TestGenetico.dir/TestGenetico_autogen/mocs_compilation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,11 +24,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "TestGenetico_autogen/include"
-  "/home/gabriel/Qt/6.2.0/gcc_64/include/QtWidgets"
-  "/home/gabriel/Qt/6.2.0/gcc_64/include"
-  "/home/gabriel/Qt/6.2.0/gcc_64/include/QtCore"
-  "/home/gabriel/Qt/6.2.0/gcc_64/mkspecs/linux-g++"
-  "/home/gabriel/Qt/6.2.0/gcc_64/include/QtGui"
+  "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtWidgets"
+  "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include"
+  "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtCore"
+  "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/mkspecs/linux-g++"
+  "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtGui"
   "/usr/local/include/opencv4"
   )
 

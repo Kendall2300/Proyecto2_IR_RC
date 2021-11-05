@@ -1,20 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'TestGenetico.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.2.0)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.0.4)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include <memory>
 #include "../../TestGenetico.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'TestGenetico.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.2.0. It"
+#error "This file was generated using the moc from 6.0.4. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -43,7 +42,7 @@ QT_MOC_LITERAL(18, 7) // "genetic"
 static const uint qt_meta_data_PlusMinus[] = {
 
  // content:
-      10,       // revision
+       9,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -54,8 +53,8 @@ static const uint qt_meta_data_PlusMinus[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x08,    1 /* Private */,
-       3,    0,   27,    2, 0x08,    2 /* Private */,
+       1,    0,   26,    2, 0x08,    0 /* Private */,
+       3,    0,   27,    2, 0x08,    1 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -85,7 +84,7 @@ const QMetaObject PlusMinus::staticMetaObject = { {
     qt_static_metacall,
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_PlusMinus_t
-, QtPrivate::TypeAndForceComplete<PlusMinus, std::true_type>
+
 , QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 

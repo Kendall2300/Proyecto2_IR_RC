@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_SOURCE_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest
+CMAKE_BINARY_DIR = /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src
 
 # Utility rule file for TestGenetico_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/TestGenetico_autogen.dir/compiler_depend.make
 include CMakeFiles/TestGenetico_autogen.dir/progress.make
 
 CMakeFiles/TestGenetico_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target TestGenetico"
-	/home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -E cmake_autogen /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target TestGenetico"
+	/home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -E cmake_autogen /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/CMakeFiles/TestGenetico_autogen.dir/AutogenInfo.json Debug
 
 TestGenetico_autogen: CMakeFiles/TestGenetico_autogen
 TestGenetico_autogen: CMakeFiles/TestGenetico_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/TestGenetico_autogen.dir/clean:
 .PHONY : CMakeFiles/TestGenetico_autogen.dir/clean
 
 CMakeFiles/TestGenetico_autogen.dir/depend:
-	cd /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest /home/gabriel/Documentos/GitHub/Proyecto2_IR_RC/MoreTest/CMakeFiles/TestGenetico_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/src/Image_Recovery/Image_Recovery_src/CMakeFiles/TestGenetico_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TestGenetico_autogen.dir/depend
 
