@@ -869,7 +869,48 @@ compiler_clean: compiler_lrelease_clean compiler_rcc_clean compiler_moc_predefs_
 
 ####### Compile
 
-Grafo.o: ../Rent_Car/Grafo.cpp ../Rent_Car/Grafo.h
+Grafo.o: ../Rent_Car/Grafo.cpp ../Rent_Car/Grafo.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/QString \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstring.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qchar.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qglobal.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qconfig.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qtcore-config.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qsysinfo.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qlogging.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qflags.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qatomic.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qnumeric.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qversiontagging.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstringview.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qbytearray.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qrefcount.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qnamespace.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qtmetamacros.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qarraydata.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qpair.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qarraydataops.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qcontainertools_impl.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qbytearrayview.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstringliteral.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstringalgorithms.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qanystringview.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qutf8stringview.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstringtokenizer.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qstringbuilder.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Grafo.o ../Rent_Car/Grafo.cpp
 
 graph_view.o: ../Rent_Car/graph_view.cpp ../Rent_Car/graph_view.h \
@@ -1024,7 +1065,9 @@ graph_view.o: ../Rent_Car/graph_view.cpp ../Rent_Car/graph_view.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qguiapplication.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qinputmethod.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/qlocale.h \
-		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qguiapplication_platform.h
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtGui/qguiapplication_platform.h \
+		../Rent_Car/Grafo.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graph_view.o ../Rent_Car/graph_view.cpp
 
 main.o: ../Rent_Car/main.cpp ../Rent_Car/rent_car.h \
@@ -1376,7 +1419,9 @@ rent_car.o: ../Rent_Car/rent_car.cpp ../Rent_Car/rent_car.h \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/QVBoxLayout \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/QWidget \
 		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/QMessageBox \
-		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/qmessagebox.h
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtWidgets/qmessagebox.h \
+		../Rent_Car/Grafo.h \
+		/home/kendall/Qt/6.2.0/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rent_car.o ../Rent_Car/rent_car.cpp
 
 qrc_qmake_qmake_qm_files.o: qrc_qmake_qmake_qm_files.cpp 
