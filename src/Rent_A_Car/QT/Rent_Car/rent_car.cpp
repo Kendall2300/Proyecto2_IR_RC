@@ -3,6 +3,7 @@
 #include "QMessageBox"
 #include "Grafo.h"
 #include "iostream"
+#include "QString"
 Rent_Car::Rent_Car(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Rent_Car)
@@ -16,12 +17,12 @@ Rent_Car::~Rent_Car()
 }
 
 int Vertices=0;
+Grafo GR;
 void Rent_Car::on_pushButton_aceptar_Cciudades_clicked()
 {  
     QString ingreso_ciudades=ui->lineEdit_ciudades->text();
     int Vertices=ingreso_ciudades.toInt();
         string ciudades[15] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"};
-        Grafo GR;
         GR.Inicializa();
         for (int c = 0; c < Vertices; c++)
         {
@@ -60,5 +61,13 @@ void Rent_Car::on_pushButton_aceptar_Cciudades_clicked()
 
 }
 
+void Rent_Car::on_pushButton_clicked()
+{
+    QString ciudad_origen=ui->lineEdit_ciudad_origen->text();
+    QString ciudad_destino=ui->lineEdit_ciudad_destino->text();
+    string algoritmo_resultado=GR.PrimeroMejor(GR.GetVertice(ciudad_origen.toStdString()),GR.GetVertice(ciudad_destino.toStdString()));
+    QString label_message=QString::fromStdString(algoritmo_resultado);
+    ui->label_algoritmo_result->setText(label_message);
 
+}
 

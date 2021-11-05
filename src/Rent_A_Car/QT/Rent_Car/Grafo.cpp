@@ -403,9 +403,10 @@ bool Comparacion(pair <Vertice*, int> a, pair<Vertice*, int> b)
  * @param origen Un vertice que sera el punto de partida
  * @param destino Un vertice que sera el punto de llegada
  */
-void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
+string Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
 {
     int CostoActual, band, band2, CostoAnterior;
+    string resultado_costo, resultado_camino,resultado_ordenado;
     Vertice *VerticeActual, *DestinoActual;
     Arista *aux;
     typedef pair<Vertice*, int> VerticeCosto;
@@ -426,13 +427,16 @@ void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
 
         if(VerticeActual == destino)
         {
-            cout<<"Costo: "<<CostoActual<<endl;
+            //cout<<"Costo: "<<CostoActual<<endl;
+            string converter(std::to_string(CostoActual));
+            resultado_costo+=converter+"\n";
             band2 = 1;
             DestinoActual = destino;
 
             while(!pila.empty())
             {
-                cout<<DestinoActual->nombre<<"<-";
+                //cout<<DestinoActual->nombre<<"<-";
+                resultado_camino+=DestinoActual->nombre+"<-";
 
                 while(!pila.empty() && pila.top().second != DestinoActual)
                 {
@@ -497,4 +501,6 @@ void Grafo::PrimeroMejor(Vertice *origen, Vertice *destino)
     {
         cout<<"No hay una ruta entre esos dos vertices"<<endl;
     }
+    resultado_ordenado="El camino a seguir es: "+resultado_camino+"\n"+"El tanque neceasrio para el recorrido es: "+resultado_costo+"\n";
+    return resultado_ordenado;
 }

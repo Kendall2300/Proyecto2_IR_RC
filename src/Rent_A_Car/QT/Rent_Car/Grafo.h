@@ -48,7 +48,7 @@ public:
     void EliminarVertice(Vertice *vert);
     void RecorridoProfundidad(Vertice *origen);
     void PrimeroProfundidad(Vertice *origen, Vertice *destino);
-    void PrimeroMejor(Vertice *origen, Vertice *destino);
+    string PrimeroMejor(Vertice *origen, Vertice *destino);
     string lavel;
 };
 #endif // GRAFO_H
