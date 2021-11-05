@@ -24,6 +24,7 @@ int *mpool;
 bool sWhite = true;
 bool eWhite = true;
 int srow, scol, erow, ecol;
+string readFile;
 
 struct Species
 {
@@ -135,7 +136,7 @@ bool sortRule(Species a, Species b)
 int TestGenetic(){srand(time(NULL));
 
     Mat target, proc;
-    target = imread("zz.png", 0);
+    target = imread(readFile, 0);
     namedWindow("Display Image", WINDOW_AUTOSIZE);
 
 //    --------------------------------------------------------------
@@ -378,6 +379,7 @@ PlusMinus::PlusMinus(QWidget *parent)
 void PlusMinus::OnPlus() {
 
     QString filename= QFileDialog::getOpenFileName(this, tr("Chose"), "", tr("Images(*.png *.jpg *.jpeg *.gif)"));
+    readFile = filename.toStdString();
     if (QString::compare(filename, QString()) !=0)
     {
         QImage image;
