@@ -1,5 +1,19 @@
-/home/gabriel/clion-2021.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/gabriel/CLionProjects/prove
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+/home/dlurena24/Programs/clion-2021.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface"
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found WrapOpenGL: TRUE  
+-- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) 
+-- Found XKB: /usr/lib/x86_64-linux-gnu/libxkbcommon.so (found suitable version "0.10.0", minimum required is "0.5.0") 
+-- Found OpenCV: /usr/local (found version "4.5.4") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gabriel/CLionProjects/prove/cmake-build-debug
+-- Build files have been written to: /home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface

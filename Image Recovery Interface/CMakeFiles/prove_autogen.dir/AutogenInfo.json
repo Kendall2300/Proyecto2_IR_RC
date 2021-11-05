@@ -1,0 +1,81 @@
+{
+	"BUILD_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/prove_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface",
+	"HEADERS" : 
+	[
+		[
+			"/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/prove_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/prove_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface",
+		"/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtWidgets",
+		"/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include",
+		"/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtCore",
+		"/home/dlurena24/Programs/Qt/6.0.4/gcc_64/mkspecs/linux-g++",
+		"/home/dlurena24/Programs/Qt/6.0.4/gcc_64/include/QtGui",
+		"/usr/local/include/opencv4",
+		"/usr/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/prove_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/prove_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/home/dlurena24/Programs/Qt/6.0.4/gcc_64/bin/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"SETTINGS_FILE" : "/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/prove_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/main.cpp",
+			"MU"
+		],
+		[
+			"/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/mainwindow.cpp",
+			"MU"
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

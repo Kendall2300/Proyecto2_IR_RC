@@ -1,0 +1,4 @@
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/rebuild_cache.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/edit_cache.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/prove.dir
+/home/dlurena24/Documents/TEC_DOCS/ALGORITMOS_Y_ESTRUCTURAS_DE_DATOS_II/Projecto_2/Proyecto2_IR_RC/Image Recovery Interface/CMakeFiles/prove_autogen.dir
