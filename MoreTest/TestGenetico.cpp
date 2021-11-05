@@ -32,7 +32,6 @@ public:
     int fit;
     int _rw, _cl;
     int index;
-    int ref = 20;
 
     void setFit()
     {
@@ -102,9 +101,9 @@ public:
     }
 };
 
-void breed(int place, Species a, Species b)
+void breed(int place, Species a, Species b, int refI)
 {
-    int ref = 20;
+    int ref = refI - 7;
     for (int i = 0; i < frows; i++)
     {
         for (int j = 0; j < fcols; j++)
@@ -344,7 +343,7 @@ int TestGenetic(){srand(time(NULL));
         for (int i = 0; i < ppn; i++)
         {
             int a = rand() % plen, b = rand() % plen;
-            breed(i, ppl[mpool[a]], ppl[mpool[b]]);
+            breed(i, ppl[mpool[a]], ppl[mpool[b]], srow);
         }
         for (int i = 0; i < ppn; i++)
             ppl[i].mutate();
